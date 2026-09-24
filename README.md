@@ -64,7 +64,7 @@ Estimated Altitude : 920.0 meters
 ## Tech Stack
 
 - Python 3
-- 
+  
 - NumPy — matrix math for the trilateration solver
 
 ## Getting Started
