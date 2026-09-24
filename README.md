@@ -6,6 +6,28 @@ A Python tool that decodes NMEA GPS/GNSS data and computes receiver position usi
 
 During my internship at **ISRO's Master Control Facility, Hassan**, I worked with an IFEN GNSS receiver tracking NavIC/IRNSS and GPS signals, using Python to decode the receiver's NMEA output and compute Position, Velocity, and Time (PVT). This project rebuilds that pipeline from scratch using public standards (NMEA 0183) — no proprietary code or data.
 
+## Example NMEA Sentence
+
+This is a real NMEA $GPGGA sentence, as output by a GNSS receiver:
+
+
+$GPGGA,123519.00,1258.1234,N,07735.5678,E,1,08,0.8,920.4,M,0.0,M,,*5E
+
+
+Breaking it down:
+| Field | Value | Meaning |
+|---|---|---|
+| Sentence ID | GPGGA | GPS fix data |
+| UTC Time | 123519.00 | 12:35:19 UTC |
+| Latitude | 1258.1234,N | 12° 58.1234′ N |
+| Longitude | 07735.5678,E | 77° 35.5678′ E |
+| Fix Quality | 1 | GPS fix |
+| Satellites Used | 08 | 8 satellites |
+| Altitude | 920.4,M | 920.4 meters |
+| Checksum | *5E | For error checking |
+
+This script reads a sentence like this, verifies its checksum, and decodes each field into a clean, human-readable output.
+
 ## How it works
 
 1. GNSS satellites (NavIC / GPS) broadcast signal
