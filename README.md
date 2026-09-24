@@ -9,17 +9,29 @@ During my internship at **ISRO's Master Control Facility, Hassan**, I worked wit
 ## How it works
 
 GNSS Satellites (NavIC / GPS)
+
         ↓
+        
 Receiver acquires & tracks signals
+
         ↓
+        
 Receiver outputs NMEA sentences
+
         ↓
+        
 Python parses the NMEA data
+
         ↓
+        
 Extracts Latitude / Longitude / Altitude / Time
+
         ↓
+        
 Trilateration solves receiver position
+
         ↓
+        
 Displays results
 
 ## Features
