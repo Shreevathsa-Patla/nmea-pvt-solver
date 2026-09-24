@@ -25,10 +25,15 @@ Displays results
 ## Features
 
 - NMEA `$GPGGA` sentence parsing with checksum verification
+  
 - NMEA coordinate format → decimal degrees conversion
+ 
 - ECEF (Earth-Centered Earth-Fixed) coordinate conversion
+  
 - Iterative least-squares trilateration solver
+  
 - Receiver clock-bias estimation
+ 
 - Clean, labeled output
 
 ## Sample Output
@@ -36,21 +41,29 @@ Displays results
 ## NMEA Navigation Data
 
 UTC Time : 12:35:19
+
 Latitude : 12.968723333333333
+
 Longitude : 77.59279666666667
+
 Altitude : 920.4 meters
+
 Satellites : 8
+
 Fix Quality: 1
 
 ## Trilateration Demo
 
 Estimated Latitude : 12.968700
+
 Estimated Longitude: 77.592800
+
 Estimated Altitude : 920.0 meters
 
 ## Tech Stack
 
 - Python 3
+- 
 - NumPy — matrix math for the trilateration solver
 
 ## Getting Started
@@ -58,6 +71,7 @@ Estimated Altitude : 920.0 meters
 bash:
 
 pip install numpy
+
 python nmea_pvt.py
 
 
@@ -69,4 +83,5 @@ Satellite positions used in the trilateration demo are illustrative, not real ep
 
 **Shreevathsa A P**
 • LinkedIn:https://www.linkedin.com/in/shreevathsa-ap-84114526a 
+
 • GitHub:https://github.com/Shreevathsa-Patla
